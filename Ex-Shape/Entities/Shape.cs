@@ -6,10 +6,6 @@ namespace Ex_Shape.Entities
     {
         public Color color { get; set; }
 
-        public Shape() 
-        {
-        }
-
         public Shape(Color color) 
         {
             this.color = color;

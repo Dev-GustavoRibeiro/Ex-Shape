@@ -30,14 +30,14 @@ namespace Ex_Shape
                     Console.Write("Height: ");
                     double height = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                    shapes.Add(new Rectangle(width, height));
+                    shapes.Add(new Rectangle(color, width, height));
                 }
                 else if (type == 'c')
                 {
                     Console.Write("Radius: ");
                     double radius = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                    shapes.Add(new Circle(radius));
+                    shapes.Add(new Circle(color, radius));
                 }
             }
 

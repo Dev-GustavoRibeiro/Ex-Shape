@@ -1,21 +1,20 @@
-﻿namespace Ex_Shape.Entities
+﻿using System;
+using Ex_Shape.Entities.Enums;
+
+namespace Ex_Shape.Entities
 {
     class Circle : Shape
     {
         public double Radius { get; set; }
 
-        public Circle()
-        {
-        }
-
-        public Circle(double radius)
+        public Circle(Color color, double radius) : base(color)
         {
             Radius = radius;
         }
 
         public override double area()
         {
-            return 3.14 * (Radius * Radius);
+            return Math.PI * (Radius * Radius);
         }
     }
 }
